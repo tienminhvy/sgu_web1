@@ -1,0 +1,13 @@
+@import "../scss/general_mixins";
+
+.btn {
+    @include btn;
+}
+
+.btn-general {
+    @include btn-general;
+}
+
+.btn-success {
+    @include btn-success;
+}
