@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        @keyframes leftright {
+            0% {
+                margin-left: 0;
+            }
+            50% {
+                margin-left: 41vw;
+                font-size: 1em;
+            }
+            100% {
+                margin-left: 81vw;
+                font-size: 0;
+            }
+        }
+        #header-text {
+            animation: leftright 2s linear alternate infinite;
+        }
+    </style>
 </head>
 <body>
     <table border="1" cellpadding="15" style="margin: 0 auto">
@@ -35,14 +53,14 @@
     <br>
     <table style="border: 7px solid green;" border="1" width="100%" cellpadding="10" cellspacing="10">
         <tr style="height: 150px; background-color: red;">
-            <td colspan="3" style="text-align: center; font-size: 2em; color: #08d608">
+            <td colspan="3" style="font-size: 2em; color: #08d608">
                 <hr width="50%">
-                HEADER
+                <span id="header-text">HEADER</span>
             </td>
         </tr>
         <tr>
             <td colspan="3" style="padding: 0">
-                <table cellpadding="10" width="100%">
+                <table cellspacing="0" cellpadding="10" width="100%">
                     <tr>
                         <td style="background-color: grey;"><a href="">TRANG CHỦ</a></td>
                         <td><a href="">THÔNG TIN TUYỂN SINH</a></td>
@@ -53,8 +71,8 @@
             </td>
         </tr>
         <tr>
-            <td width="15%" style="border: none; padding: 0;">
-                <table border="1" cellspacing="10" cellpadding="10">
+            <td width="20%" style="border: none; padding: 0;">
+                <table width="100%" border="1" cellspacing="10" cellpadding="10">
                     <tr>
                         <td style="background-color: grey;"><a href="">TRANG CHỦ</a></td>
                     </tr>
@@ -69,8 +87,8 @@
                     </tr>
                 </table>
             </td>
-            <td width="65%" style="text-align: center;">CONTENT</td>
-            <td>RIGHT MENU</td>
+            <td width="60%" style="text-align: center;">CONTENT</td>
+            <td width="20%">RIGHT MENU</td>
         </tr>
         <tr>
             <td style="padding: 0; text-align: center;" colspan="3">
