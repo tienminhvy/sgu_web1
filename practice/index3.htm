@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            margin: 0 auto;
+            width: 80%;
+            padding: 5px;
+            background-color: orange;
+        }
+        #main > * {
+            min-height: 50px;
+        }
+        #header {
+            background-color: red;
+            height: 200px;
+        }
+        #footer {
+            background-color: purple;
+            height: 200px;
+        }
+        #nav {
+            background-color: greenyellow;
+        }
+        #nav > ul {
+            margin: 0;
+            padding: 0;
+        }
+        #nav > ul > li {
+            float: left;
+            list-style: none;
+            padding: 15px;
+            border: 1px solid black;
+            margin-right: 10px;
+        }
+        #middle {
+            background-color: white;
+        }
+        #middle > * {
+            display: inline-block;
+            vertical-align: top;
+        }
+        #left {
+            width: 19.8%;
+        }
+        #right {
+            width: 21%;
+        }
+        #left {
+            background-color: blue;
+        }
+        #left ul {
+            margin: 0;
+            padding: 0;
+        }
+        #left ul li {
+            list-style: none;
+            background-color: green;
+            padding: 5px;
+        }
+        #left ul li:first-child {
+            margin: 1px 4px 5px 0;
+        }
+        #content {
+            border: 1px solid red;
+            background-color:#2d916f;
+            width: 58%;
+        }
+        #right {
+            border: 1px solid red;
+        }
+        #footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            Header
+        </div>
+        <div id="nav">
+            <ul>
+                <li>Trang chủ</li>
+                <li>Thông tin tuyển sinh</li>
+                <li>Thông tin đào tạo</li>
+            </ul>
+        </div>
+        <div id="middle">
+            <div id="left">
+                <ul>
+                    <li>Trang chủ</li>
+                    <li>Thông tin tuyển sinh</li>
+                    <li>Thông tin đào tạo</li>
+                </ul>
+            </div>
+            <div id="content">Content</div>
+            <div id="right">Right</div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

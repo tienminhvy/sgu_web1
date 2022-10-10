@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        #all {
+            border: 4px solid;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+        }
+        ul a:hover {
+            background-color: #007c57;
+            font-style: italic;
+        }
+        a:visited {
+            color: inherit;
+        }
+        #header {
+            position: relative;
+            height: 200px;
+            background-color: #81ebc7;
+            border-bottom: 4px solid;
+        }
+        #menu {
+            border-bottom: 4px solid;
+        }
+        #menu li {
+            display: inline-block;
+            padding: 15px;
+            border: 2px solid;
+        }
+        #menu li:nth-child(odd) {
+            background-color: #f3f303;
+        }
+        #menu li:nth-child(even) {
+            background-color: #03c403;
+        }
+        #main {
+            display: flex;
+            height: 600px;
+        }
+        .items {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .items > * {
+            width: 180px;
+            height: 180px;
+            background-color: purple;
+            border: 4px solid black;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            padding-top: 15px;
+        }
+        #left, #right {
+            width: 20%;
+            height: fit-content;
+            border: 4px solid;
+        }
+        #left li {
+            border-radius: 5px;
+            border: 1px solid;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        #left li:first-child, #left li:last-child {
+            background-color: #f3f303;
+        }
+        #content {
+            padding-top: 15px;
+            width: 60%;
+            background-color: #007c57;
+            position: relative;
+        }
+        #btn {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            padding: 15px;
+            background-color: red;
+            text-transform: uppercase;
+        }
+        #footer {
+            border-top: 4px solid;
+            height: 200px;
+            background-color: purple;
+        }
+
+        #btn-header {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 15px;
+            background-color: #007c57;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #menu li {
+                display: block;
+            }
+            #content {
+                width: 70%;
+            }
+            #left {
+                width: 30%;
+            }
+            #right {
+                display: none;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="all">
+        <div id="header">
+            Header
+            <a href="" id="btn-header">Button</a>
+        </div>
+        <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="https://tuyensinh.sgu.edu.vn">Thông tin tuyển sinh</a></li>
+            <li><a href="https://daotao.sgu.edu.vn">Thông tin đào tạo</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+        </div>
+        <div id="main">
+        <div id="left">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="https://daotao.sgu.edu.vn">đào tạo sgu</a></li>
+                <li><a href="https://ttcntt.sgu.edu.vn">trung tâm CNTT</a></li>
+                <li><a href="https://fit.sgu.edu.vn">Khoa CNTT</a></li>
+                <li><a href="#">Liên hệ admin</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="items">
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+                <div>d</div>
+            </div>
+            <div class="items">
+                <div>a</div>
+                <div>b</div>
+                <div>c</div>
+                <div>d</div>
+            </div>
+            <a id="btn" href="#header">đầu trang</a>
+        </div>
+        <div id="right">Right</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
